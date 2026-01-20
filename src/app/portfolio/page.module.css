@@ -1,0 +1,219 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 160px 0 80px;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.gradientOrb {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(13, 79, 79, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 79, 79, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.heroContent {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(167, 139, 250, 0.05) 100%);
+  color: var(--color-lavender);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+.heroContent h1 {
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: var(--space-4xl) 0;
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.portfolioCard {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.portfolioCard:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+.cardImage {
+  height: 200px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initials {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.cardContent {
+  padding: var(--space-xl);
+}
+
+.category {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.cardContent h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.cardContent p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-bg-alt);
+}
+
+.student {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.studentName {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.studentCourse {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.viewBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-bg-alt);
+  color: var(--color-text-light);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.viewBtn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* CTA Section */
+.cta {
+  padding: var(--space-4xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.ctaContent {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  color: var(--color-white);
+  margin-bottom: var(--space-md);
+}
+
+.ctaContent p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .portfolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 140px 0 60px;
+  }
+
+  .portfolioGrid {
+    grid-template-columns: 1fr;
+  }
+}
