@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { articleData } from './articles/[slug]/articleData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://screenshiksha.com'
@@ -27,13 +28,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/portfolio`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/articles`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/faqs`,
@@ -70,5 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  return [...staticPages, ...coursePages]
+  // Article pages - dynamically generated from articleData
+  const articlePages = Object.entries(articleData).map(([slug, article]) => ({
+    url: `${baseUrl}/articles/${slug}`,
+    lastModified: new Date(article.publishedDate),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...coursePages, ...articlePages]
 }

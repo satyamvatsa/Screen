@@ -90,6 +90,12 @@
   box-shadow: var(--shadow-xl);
 }
 
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .articleImage {
   height: 180px;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);

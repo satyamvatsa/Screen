@@ -12,6 +12,7 @@ const portfolioItems = [
     project: 'iVOTE: Bringing Elections Closer',
     description: 'An election empowerment platform with user-centric design and intuitive workflows that make voting information clear and accessible.',
     category: 'Mobile App Design',
+    link: 'https://www.behance.net/gallery/211107221/iVOTE-Bringing-Elections-Closer',
   },
   {
     name: 'Kailash Nath',
@@ -19,6 +20,7 @@ const portfolioItems = [
     project: 'Parking Space',
     description: 'A smart parking app with clean UI and seamless user experience, designed to simplify finding and managing parking spaces.',
     category: 'Mobile App Design',
+    link: 'https://www.behance.net/gallery/208313707/Parking-Space',
   },
   {
     name: 'Sai Surya',
@@ -26,6 +28,7 @@ const portfolioItems = [
     project: 'Subandhan Nidhi Web-App',
     description: 'A comprehensive financial management web app with intuitive dashboard and seamless user experience for efficient fund oversight.',
     category: 'Web App Design',
+    link: 'https://www.behance.net/gallery/212632883/subandhan-nidhi-Web-App-UIUX-case-study',
   },
 ]
 
@@ -103,9 +106,15 @@ export default function PortfolioPageClient() {
                       <span className={styles.studentName}>{item.name}</span>
                       <span className={styles.studentCourse}>{item.course}</span>
                     </div>
-                    <button className={styles.viewBtn}>
+                    <a 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={styles.viewBtn}
+                      aria-label={`View ${item.project} project`}
+                    >
                       <ExternalLink size={16} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </motion.div>

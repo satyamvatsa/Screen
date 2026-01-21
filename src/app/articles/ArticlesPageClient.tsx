@@ -12,6 +12,7 @@ const articles = [
     category: 'UI/UX Design',
     readTime: '8 min read',
     date: 'Jan 15, 2026',
+    slug: 'getting-started-with-ui-ux-design',
   },
   {
     title: 'Top 10 Web Development Trends to Watch in 2026',
@@ -19,6 +20,7 @@ const articles = [
     category: 'Web Development',
     readTime: '6 min read',
     date: 'Jan 12, 2026',
+    slug: 'top-10-web-development-trends-2026',
   },
   {
     title: 'Building Your Design Portfolio: Tips from Industry Experts',
@@ -26,6 +28,7 @@ const articles = [
     category: 'Career',
     readTime: '10 min read',
     date: 'Jan 10, 2026',
+    slug: 'building-your-design-portfolio',
   },
   {
     title: 'The Psychology of Color in Brand Design',
@@ -33,6 +36,7 @@ const articles = [
     category: 'Graphic Design',
     readTime: '7 min read',
     date: 'Jan 8, 2026',
+    slug: 'psychology-of-color-in-brand-design',
   },
   {
     title: 'Introduction to Game Development with Unity',
@@ -40,6 +44,7 @@ const articles = [
     category: 'Game Development',
     readTime: '12 min read',
     date: 'Jan 5, 2026',
+    slug: 'introduction-to-game-development-unity',
   },
   {
     title: 'Responsive Design Best Practices for Modern Websites',
@@ -47,6 +52,7 @@ const articles = [
     category: 'Web Development',
     readTime: '9 min read',
     date: 'Jan 3, 2026',
+    slug: 'responsive-design-best-practices',
   },
 ]
 
@@ -110,21 +116,23 @@ export default function ArticlesPageClient() {
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
               >
-                <div className={styles.articleImage}>
-                  <span className={styles.categoryBadge}>{article.category}</span>
-                </div>
-                <div className={styles.articleContent}>
-                  <div className={styles.articleMeta}>
-                    <span>{article.date}</span>
-                    <span className={styles.dot}>•</span>
-                    <span><Clock size={14} /> {article.readTime}</span>
+                <Link href={`/articles/${article.slug}`} className={styles.cardLink}>
+                  <div className={styles.articleImage}>
+                    <span className={styles.categoryBadge}>{article.category}</span>
                   </div>
-                  <h2>{article.title}</h2>
-                  <p>{article.excerpt}</p>
-                  <Link href="#" className={styles.readMore}>
-                    Read Article <ArrowRight size={16} />
-                  </Link>
-                </div>
+                  <div className={styles.articleContent}>
+                    <div className={styles.articleMeta}>
+                      <span>{article.date}</span>
+                      <span className={styles.dot}>•</span>
+                      <span><Clock size={14} /> {article.readTime}</span>
+                    </div>
+                    <h2>{article.title}</h2>
+                    <p>{article.excerpt}</p>
+                    <span className={styles.readMore}>
+                      Read Article <ArrowRight size={16} />
+                    </span>
+                  </div>
+                </Link>
               </motion.article>
             ))}
           </motion.div>
