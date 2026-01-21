@@ -170,6 +170,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HEK16ZTZTF"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HEK16ZTZTF');
+          `}
+        </Script>
         <link rel="icon" href="/favicon.jpeg" type="image/jpeg" />
         <link rel="apple-touch-icon" href="/logo-black.png" />
         <link rel="manifest" href="/manifest.json" />
