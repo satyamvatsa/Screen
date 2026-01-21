@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react'
 import styles from './Footer.module.css'
 
@@ -35,8 +36,13 @@ export default function Footer() {
             {/* Brand Section */}
             <div className={styles.brand}>
               <Link href="/" className={styles.logo}>
-                <span className={styles.logoIcon}>S</span>
-                <span className={styles.logoText}>Screen Shiksha</span>
+                <Image
+                  src="/logo-white.png"
+                  alt="Screen Shiksha"
+                  width={180}
+                  height={40}
+                  className={styles.logoImage}
+                />
               </Link>
               <p className={styles.tagline}>
                 Empowering creative careers through expert-led live online training in UI/UX Design, Web Development, and Game Development.

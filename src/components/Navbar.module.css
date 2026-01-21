@@ -53,6 +53,19 @@
   background-clip: text;
 }
 
+.logoImage {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  transition: opacity var(--transition-fast);
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 28px;
+  }
+}
+
 .desktopNav {
   display: flex;
   align-items: center;
@@ -63,8 +76,13 @@
   display: flex;
   align-items: center;
   gap: var(--space-xs);
+  font-family: inherit;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-text);
+  background: none;
+  border: none;
+  cursor: pointer;
   transition: color var(--transition-fast);
   padding: var(--space-sm) 0;
 }

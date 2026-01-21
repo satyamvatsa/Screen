@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import styles from './Navbar.module.css'
@@ -46,8 +47,14 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoIcon}>S</span>
-          <span className={styles.logoText}>Screen Shiksha</span>
+          <Image
+            src="/logo-black.png"
+            alt="Screen Shiksha"
+            width={180}
+            height={40}
+            priority
+            className={styles.logoImage}
+          />
         </Link>
 
         {/* Desktop Navigation */}

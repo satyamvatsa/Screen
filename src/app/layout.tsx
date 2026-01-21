@@ -95,7 +95,7 @@ const organizationSchema = {
   name: 'Screen Shiksha',
   alternateName: 'Screen Shiksha by Multiorigin',
   url: 'https://screenshiksha.com',
-  logo: 'https://screenshiksha.com/logo.png',
+  logo: 'https://screenshiksha.com/logo-black.png',
   description: 'Screen Shiksha offers professional online courses in UI/UX Design, Web Development, Graphic Design, and Game Development with live interactive classes.',
   email: 'info@screenshiksha.com',
   telephone: '+91-9650582767',
@@ -170,9 +170,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.jpeg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/logo-black.png" />
         <link rel="manifest" href="/manifest.json" />
         <Script
           id="organization-schema"

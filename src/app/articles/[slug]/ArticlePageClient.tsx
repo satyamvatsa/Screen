@@ -44,7 +44,7 @@ export default function ArticlePageClient() {
       name: 'Screen Shiksha',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://screenshiksha.com/logo.png',
+        url: 'https://screenshiksha.com/logo-black.png',
         width: 200,
         height: 60,
       },

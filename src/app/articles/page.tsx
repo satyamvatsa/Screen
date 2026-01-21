@@ -69,7 +69,7 @@ const blogSchema = {
     url: 'https://screenshiksha.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://screenshiksha.com/logo.png',
+      url: 'https://screenshiksha.com/logo-black.png',
     },
   },
   blogPost: [
