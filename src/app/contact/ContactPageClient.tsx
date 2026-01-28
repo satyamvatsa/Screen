@@ -2,12 +2,12 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  Clock, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Clock,
   MessageCircle,
   Facebook,
   Instagram,
@@ -17,6 +17,7 @@ import {
 } from 'lucide-react'
 import styles from './page.module.css'
 import Button from '@/components/Button'
+import axios from 'axios'
 
 const contactInfo = [
   {
@@ -82,15 +83,30 @@ export default function ContactPageClient() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
+    phoneNumber: '',
     course: '',
     message: '',
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitted(true)
+
+    try {
+      const response = await axios.post(
+        'https://studentapi.anginatlearning.com/api/lead/events-contact-us',
+        { to: "info@screenshiksha.com", ...formData },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      )
+
+    } catch (error) {
+      console.error('Error submitting form:', error)
+    }
     setTimeout(() => setIsSubmitted(false), 5000)
   }
 
@@ -106,9 +122,9 @@ export default function ContactPageClient() {
           <div className={styles.gradientOrb} />
           <div className={styles.gridPattern} />
         </div>
-        
+
         <div className={styles.container}>
-          <motion.div 
+          <motion.div
             className={styles.heroContent}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -119,7 +135,7 @@ export default function ContactPageClient() {
             </span>
             <h1>Let&apos;s Start Your Learning Journey</h1>
             <p>
-              Have questions about our courses? Want to book a demo? 
+              Have questions about our courses? Want to book a demo?
               We&apos;re here to help you take the first step towards your dream career.
             </p>
           </motion.div>
@@ -131,7 +147,7 @@ export default function ContactPageClient() {
         <div className={styles.container}>
           <div className={styles.contactGrid}>
             {/* Contact Form */}
-            <motion.div 
+            <motion.div
               className={styles.formSection}
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -142,7 +158,7 @@ export default function ContactPageClient() {
               <p>Fill out the form and we&apos;ll get back to you within 24 hours.</p>
 
               {isSubmitted ? (
-                <motion.div 
+                <motion.div
                   className={styles.successMessage}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -185,7 +201,7 @@ export default function ContactPageClient() {
                         type="tel"
                         id="phone"
                         name="phone"
-                        value={formData.phone}
+                        value={formData.phoneNumber}
                         onChange={handleChange}
                         placeholder="Enter your phone number"
                         required
@@ -229,7 +245,7 @@ export default function ContactPageClient() {
             </motion.div>
 
             {/* Contact Info */}
-            <motion.div 
+            <motion.div
               className={styles.infoSection}
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -293,7 +309,7 @@ export default function ContactPageClient() {
       {/* FAQ Section */}
       <section className={styles.faq}>
         <div className={styles.container}>
-          <motion.div 
+          <motion.div
             className={styles.sectionHeader}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
