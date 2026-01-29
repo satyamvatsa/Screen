@@ -196,11 +196,11 @@ export default function ContactPageClient() {
                       />
                     </div>
                     <div className={styles.formGroup}>
-                      <label htmlFor="phone">Phone Number *</label>
+                      <label htmlFor="phoneNumber">Phone Number *</label>
                       <input
                         type="tel"
-                        id="phone"
-                        name="phone"
+                        id="phoneNumber"
+                        name="phoneNumber"
                         value={formData.phoneNumber}
                         onChange={handleChange}
                         placeholder="Enter your phone number"
