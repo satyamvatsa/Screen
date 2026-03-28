@@ -21,10 +21,10 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' },
+  { icon: Facebook, href: 'https://www.facebook.com/screenshiksha', label: 'Facebook' },
+  { icon: Instagram, href: 'https://www.instagram.com/screenshiksha/', label: 'Instagram' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/school/screen-shiksha/', label: 'LinkedIn' },
+  { icon: Youtube, href: 'https://www.youtube.com/@screenshikshaofficial', label: 'YouTube' },
 ]
 
 export default function Footer() {
