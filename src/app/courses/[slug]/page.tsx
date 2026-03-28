@@ -26,6 +26,11 @@ const courseMetadata: { [key: string]: { title: string; description: string; key
     description: 'Learn game development with Unity & C#. Create 2D/3D games from scratch. 12-month live online course with industry mentors & portfolio-ready projects.',
     keywords: ['game development course', 'Unity course', 'C# game programming', 'learn game dev', 'game design course', 'Unity training'],
   },
+  'digital-marketing': {
+    title: 'Digital Marketing Course - SEO, Google Ads, Social Media & Analytics',
+    description: 'Master digital marketing with our 67-module program covering SEO, Google Ads, Meta Ads, social media, analytics & AI marketing. 3-month training + 6-month internship with certification.',
+    keywords: ['digital marketing course', 'SEO training', 'Google Ads course', 'social media marketing', 'performance marketing', 'digital marketing certification'],
+  },
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -58,6 +63,7 @@ export async function generateStaticParams() {
     { slug: 'web-development' },
     { slug: 'graphic-design' },
     { slug: 'game-development' },
+    { slug: 'digital-marketing' },
   ]
 }
 

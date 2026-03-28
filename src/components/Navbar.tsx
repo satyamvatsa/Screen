@@ -28,6 +28,11 @@ const courses = [
     href: '/courses/game-development', 
     description: 'Build immersive games with Unity and C#.' 
   },
+  { 
+    name: 'Digital Marketing', 
+    href: '/courses/digital-marketing', 
+    description: 'Master SEO, ads, social media & analytics.' 
+  },
 ]
 
 export default function Navbar() {

@@ -17,6 +17,7 @@ const footerLinks = {
     { name: 'Web Development', href: '/courses/web-development' },
     { name: 'Graphic Design Professional', href: '/courses/graphic-design' },
     { name: 'Game Development', href: '/courses/game-development' },
+    { name: 'Digital Marketing', href: '/courses/digital-marketing' },
   ],
 }
 

@@ -12,6 +12,7 @@ import {
   Laptop,
   Palette,
   Gamepad2,
+  Megaphone,
   Code,
   MessageCircle,
   Target,
@@ -53,6 +54,14 @@ const courses = [
     icon: Gamepad2,
     color: 'var(--color-sky)',
     href: '/courses/game-development',
+  },
+  {
+    title: 'Digital Marketing',
+    description: 'Master SEO, Google Ads, social media marketing, and analytics with our comprehensive 67-module program including a 6-month internship.',
+    duration: '3+6 months',
+    icon: Megaphone,
+    color: 'var(--color-rose, #e74c6f)',
+    href: '/courses/digital-marketing',
   },
 ]
 
