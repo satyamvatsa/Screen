@@ -62,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'web-development',
     'graphic-design',
     'game-development',
+    'digital-marketing',
   ]
 
   const coursePages = courses.map((course) => ({

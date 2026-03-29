@@ -7,6 +7,14 @@ import styles from './page.module.css'
 
 const articles = [
   {
+    title: 'India\'s ₹250 Crore Push for Media & Entertainment: Why Now Is the Best Time to Upskill',
+    excerpt: 'The Indian government is investing heavily in AVGC, digital marketing, and creative technology. Here\'s how you can ride this wave and build a future-proof career.',
+    category: 'Industry Trends',
+    readTime: '10 min read',
+    date: 'Mar 28, 2026',
+    slug: 'india-government-media-entertainment-spending-2026',
+  },
+  {
     title: 'Getting Started with UI/UX Design: A Beginner\'s Guide',
     excerpt: 'Learn the fundamentals of user interface and user experience design, including essential tools, principles, and best practices for beginners.',
     category: 'UI/UX Design',

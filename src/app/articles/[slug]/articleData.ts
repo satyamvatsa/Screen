@@ -368,4 +368,83 @@ export const articleData: { [key: string]: {
       { type: 'paragraph', content: 'The web continues to evolve with new capabilities like container queries, cascade layers, and :has() selector making responsive design more powerful. Stay curious, keep learning, and always prioritize the user experience across all devices.' },
     ],
   },
+  'india-government-media-entertainment-spending-2026': {
+    title: 'India\'s ₹250 Crore Push for Media & Entertainment: Why Now Is the Best Time to Upskill',
+    excerpt: 'The Indian government is investing heavily in AVGC, digital marketing, and creative technology. Here\'s how you can ride this wave and build a future-proof career.',
+    category: 'Industry Trends',
+    readTime: '10 min read',
+    date: 'Mar 28, 2026',
+    publishedDate: '2026-03-28',
+    author: 'Screen Shiksha Team',
+    keywords: ['India media entertainment', 'AVGC sector', 'government spending', 'digital marketing career', 'creative technology jobs', 'Union Budget 2026', 'Orange Economy'],
+    content: [
+      { type: 'paragraph', content: 'India\'s media and entertainment industry is on the verge of an unprecedented boom — and the Government of India is putting its money where its mouth is. In the Union Budget 2026-27, Finance Minister Nirmala Sitharaman announced a dedicated ₹250 crore allocation for talent development in the Animation, Visual Effects, Gaming, and Comics (AVGC) sector, alongside sweeping initiatives to transform India into a global hub for creative content and digital innovation.' },
+      { type: 'paragraph', content: 'For students, professionals, and career changers, this signals one thing clearly: the creative and digital skills economy is about to explode, and those who upskill today will be the biggest beneficiaries.' },
+
+      { type: 'heading', content: 'The Numbers That Matter' },
+      { type: 'paragraph', content: 'The scale of India\'s commitment to the media and entertainment sector is staggering:' },
+      { type: 'list', content: [
+        '₹250 crore earmarked specifically for AVGC talent development in FY 2026-27',
+        'AVGC Content Creator Labs to be set up across 15,000 secondary schools and 500 colleges nationwide',
+        'India\'s M&E industry projected to reach $100 billion by 2030 (FICCI-EY report)',
+        '2 million professionals expected to be needed in the AVGC sector alone by 2030',
+        'The Indian "Orange Economy" — creativity-led sectors including media, design, and IP — identified as a key growth driver in the Economic Survey 2025-26',
+      ]},
+      { type: 'paragraph', content: 'To put this in perspective, India is not just consuming content anymore — it is positioning itself to become a global creator and exporter of digital content, design, and technology.' },
+
+      { type: 'heading', content: 'What Is the AVGC Sector and Why Does It Matter?' },
+      { type: 'paragraph', content: 'AVGC stands for Animation, Visual Effects, Gaming, and Comics — but the reality is much broader. This sector encompasses everything from game development and UI/UX design to motion graphics, digital marketing content, web development for entertainment platforms, and AI-powered creative tools.' },
+      { type: 'paragraph', content: 'The government has approved the establishment of a National Centre of Excellence (NCoE) for AVGC-XR (Extended Reality), with the Indian Institute of Creative Technologies (IICT) in Mumbai as the nodal institution. It will operate under a hub-and-spoke model, connecting industry and academia across states.' },
+      { type: 'quote', content: 'India needs 2 million skilled AVGC professionals by 2030. The gap between demand and supply has never been larger — or the opportunity greater.' },
+
+      { type: 'heading', content: 'State-Level Initiatives Are Adding Fuel' },
+      { type: 'paragraph', content: 'It\'s not just the central government. Individual states are doubling down with their own policies:' },
+      { type: 'list', content: [
+        'Tamil Nadu launched its AVGC-XR Policy 2026, targeting 200+ startups and 2 lakh jobs by 2030, supported by a ₹50 crore Centre of Excellence',
+        'Karnataka continues to strengthen its position as India\'s AVGC capital with dedicated incubation centers',
+        'Maharashtra, Telangana, and Andhra Pradesh are offering subsidies and incentives for creative studios and digital agencies',
+      ]},
+
+      { type: 'heading', content: 'How This Impacts YOUR Career' },
+      { type: 'paragraph', content: 'This massive government and industry push creates a golden window of opportunity for anyone willing to build relevant skills. Here\'s who stands to benefit the most:' },
+      { type: 'list', content: [
+        'UI/UX Designers: Every app, platform, and digital product needs intuitive interfaces. With thousands of new AVGC projects launching, demand for designers will skyrocket.',
+        'Web Developers: Entertainment platforms, e-commerce for creative goods, and content delivery systems all need skilled developers.',
+        'Graphic Designers: From brand identities for new studios to marketing collateral for M&E companies, visual design is foundational.',
+        'Game Developers: With India\'s gaming market crossing $6 billion, Unity and C# developers are in massive demand.',
+        'Digital Marketers: Every M&E company needs performance marketers, SEO specialists, and social media strategists to reach audiences.',
+      ]},
+
+      { type: 'heading', content: 'The Skills Gap Is Your Advantage' },
+      { type: 'paragraph', content: 'Here\'s the critical insight: while the government is investing billions in infrastructure and policy, the real bottleneck is talent. India currently produces far fewer trained creative professionals than the industry demands. This skills gap means that anyone who acquires professional-grade skills in design, development, or digital marketing today will be positioned ahead of millions of competitors.' },
+      { type: 'paragraph', content: 'The Economic Survey 2025-26 specifically highlighted the need for "structured skill development programs" to transition India from an outsourcing hub to a global center for original content and intellectual property creation.' },
+
+      { type: 'heading', content: 'What Should You Do Right Now?' },
+      { type: 'paragraph', content: 'The window of opportunity is open — but it won\'t stay open forever. As more people recognize this trend, competition for entry-level positions will intensify. Here\'s how to get ahead:' },
+      { type: 'list', content: [
+        'Pick a skill that aligns with your interest — design, coding, marketing, or gaming',
+        'Enroll in a structured, mentor-led program (not just YouTube tutorials) that includes live projects and portfolio building',
+        'Build a portfolio that showcases real-world work, not just class assignments',
+        'Start networking in the M&E and AVGC community early — attend events, join online groups, contribute to discussions',
+        'Consider certifications that employers recognize and value',
+      ]},
+
+      { type: 'heading', content: 'How Screen Shiksha Prepares You for This Boom' },
+      { type: 'paragraph', content: 'At Screen Shiksha, we\'ve designed our courses to directly align with the skills the industry is demanding right now. Whether you\'re a complete beginner or looking to upskill, our live online programs give you:' },
+      { type: 'list', content: [
+        'UI/UX Design Course — Master Figma, Graphic Design, Frontend Dev, and UX/UI in a comprehensive 4-module, 12-month program. Perfect for aspiring designers who want to build products for the booming M&E sector.',
+        'Web Development Course — Learn React, Node.js, TypeScript, and full-stack development. Build the platforms and products that the entertainment industry runs on.',
+        'Graphic Design Course — Master Adobe Photoshop, Illustrator, and InDesign. Create the visual content that brands and media companies need.',
+        'Game Development Course — Learn Unity, C#, and game design. Tap into India\'s fastest-growing gaming market with portfolio-ready projects.',
+        'Digital Marketing Course — Our 67-module program covers SEO, Google Ads, Meta Ads, social media, analytics, and AI marketing — with a 6-month internship to gain real-world experience.',
+      ]},
+      { type: 'paragraph', content: 'Every course includes live interactive classes, real-world projects, industry-recognized certification, and dedicated placement support. We don\'t just teach you skills — we prepare you for a career.' },
+
+      { type: 'quote', content: 'The government is building the infrastructure. The industry is creating the demand. All that\'s missing is YOU — with the right skills.' },
+
+      { type: 'heading', content: 'The Bottom Line' },
+      { type: 'paragraph', content: 'India\'s media and entertainment sector is entering a golden era of growth, backed by ₹250+ crore in government investment, massive private sector expansion, and a projected demand for 2 million professionals by 2030. The question isn\'t whether there will be opportunities — the question is whether you\'ll be ready to seize them.' },
+      { type: 'paragraph', content: 'Don\'t wait for the opportunity to come to you. Start building your skills today. Book a free demo class at Screen Shiksha and take the first step toward a career in one of the world\'s fastest-growing industries.' },
+    ],
+  },
 }

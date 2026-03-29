@@ -145,6 +145,14 @@ const organizationSchema = {
         educationalLevel: 'Beginner to Advanced',
         timeRequired: 'P12M',
       },
+      {
+        '@type': 'Course',
+        name: 'Digital Marketing Course',
+        description: 'Comprehensive digital marketing program covering SEO, Google Ads, Meta Ads, and analytics.',
+        provider: { '@type': 'Organization', name: 'Screen Shiksha' },
+        educationalLevel: 'Beginner to Advanced',
+        timeRequired: 'P9M',
+      },
     ],
   },
 }
